@@ -9,6 +9,18 @@ class MainController extends Controller
 {
     public function showView(): View
     {
-        return view('home', ['value' => 100]);
+        $data = [
+            'value' => 100,
+            'cities' => [
+                'Sao Paulo',
+                'Rio de Janeiro',
+                'Belo Horizonte'
+            ],
+            'names' => ['a', 'b'],
+            'indice' => 1
+
+        ];
+
+        return view('home', $data);
     }
 }
