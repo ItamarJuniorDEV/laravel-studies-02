@@ -17,7 +17,7 @@ class MainController extends Controller
                 'Belo Horizonte'
             ],
             'names' => ['a', 'b'],
-            'indice' => 1
+            'index' => 1
 
         ];
 
